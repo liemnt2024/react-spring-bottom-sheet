@@ -18,7 +18,7 @@ import {
 } from "@reach/utils";
 import { createPortal } from "react-dom";
 
-declare const __DEV__: boolean;
+const __DEV__ = true;
 
 /**
  * Portal
