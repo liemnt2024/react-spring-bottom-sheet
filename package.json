@@ -8,7 +8,7 @@
   "bugs": {
     "url": "https://github.com/stipsan/react-spring-bottom-sheet/issues"
   },
-  "version": "3.4.1",
+  "version": "3.4.2",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "files": [
@@ -16,7 +16,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "next build",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && next build",
     "build:declarations": "tsc --project tsconfig.declarations.json",
     "prebuild:dist": "rimraf dist/**",
     "build:dist": "npm run build:postcss && npm run build:microbundle && npm run build:declarations",
